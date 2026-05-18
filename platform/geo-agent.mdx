@@ -1,4 +1,84 @@
 ---
 title: "GEO Agent"
-icon: "sparkles"
+icon: "/images/icons/geo.png"
+description: "Understand your AI Readiness Score, learn what the ten GEO checks mean, and act on the recommendations that get your content cited by ChatGPT, Perplexity, and Google AI Overviews."
 ---
+
+Search engine rankings are no longer the only way people discover new products. AI tools — ChatGPT, Perplexity, Google AI Overviews, and others — are increasingly the first stop. These tools do not just rank pages. They read them, pull out the key points, and surface answers directly to users. If your content is not structured for that, it gets skipped or misrepresented.
+
+GEO (Generative Engine Optimisation) is the practice of making sure your content gets found, understood, and cited correctly by AI-powered search. The CMO audits this separately from traditional SEO, because the signals are different. A well-optimised page for Google does not automatically perform well in AI-generated answers.
+
+For traditional SEO — rankings, backlinks, Core Web Vitals — see the [SEO Agent](/platform/seo-agent) page.
+
+### **The AI/GEO Tab**
+
+The AI/GEO tab in your Analytics panel answers the question: how well is your site set up to be found and cited by AI tools?
+
+It gives you an AI Readiness Score from 0 to 100, calculated from a checklist of ten signals. Each check gets a pass or fail, and the score is the percentage of checks passed.
+
+<img
+  src="/images/analytics/image2.png"
+  alt="AI/GEO tab"
+  title="AI/GEO tab"
+  className="mx-auto"
+  style={{ width:"42%" }}
+/>
+
+### **The Ten GEO Checks**
+
+- **Structured Data (Schema.org)**: machine-readable markup that helps LLMs understand your content type, author, date, and other attributes. Without it, AI tools have to guess at the structure of your page.
+- **Meta Description**: a clear, descriptive summary that LLMs use when synthesising your page. A missing or vague meta description is a missed opportunity to control how your content is represented.
+- **Clear Heading Structure**: proper H1 tags so crawlers can parse the document hierarchy. AI tools use headings to understand what a page is actually about.
+- **Sufficient Content Depth**: enough words on the page to be worth citing. 300 words is the baseline — thin pages rarely get surfaced in AI answers.
+- **Canonical URL**: prevents confusion when multiple versions of the same page exist. AI crawlers will otherwise index duplicates and dilute your signal.
+- **robots.txt**: tells AI crawlers what they are and are not allowed to access. A misconfigured robots.txt can silently block AI tools from reading your best content.
+- **llms.txt**: a newer convention that explicitly guides LLM crawlers about your site content — what to prioritise, what to ignore, and how to represent your brand.
+- **sitemap.xml**: helps all crawlers discover your full content inventory. Without one, AI tools may only find the pages that already have inbound links.
+- **Language Attribute**: tells multilingual AI systems which language your content is in, so it surfaces correctly to the right audience.
+- **Content Readability**: a readability grade based on sentence structure and vocabulary complexity. Dense, jargon-heavy content is harder for AI tools to synthesise accurately.
+
+Hover over any check to see the specific detail: what the CMO found on your site, and why it matters.
+
+### **Site Files**
+
+Below the checklist, the Site Files section shows the exact status of your `robots.txt`, `llms.txt`, and `sitemap.xml` — including file size and a preview of the content.
+
+If any of these files are missing or malformed, the CMO will flag them here. These three files are the easiest GEO wins because they are structural fixes, not content rewrites. The Coding Agent can implement them directly in your codebase.
+
+### **GEO Recommendations in Your Feed**
+
+Your AI Readiness Score tells you where you stand. Your Feed is where the CMO tells you what to fix.
+
+GEO recommendations appear in your Feed alongside SEO tasks, ranked by impact. Each one shows the affected URL, the check that failed, and its priority level. Click to open the full detail: what the problem is, why it matters for AI visibility, and a step-by-step fix written for your specific site.
+
+<img
+  src="/images/analytics/image7.png"
+  alt="GEO recommendations in Feed"
+  title="GEO recommendations in Feed"
+  className="mx-auto"
+  style={{ width:"39%" }}
+/>
+
+If your AI Readiness Score is low, the highest-impact fixes are usually structured data, `llms.txt`, and content depth. Start there. Once you have fixed an issue, mark it complete in the Feed and the CMO will move to the next one.
+
+### **Asking the CMO About Your GEO Data**
+
+Open the chat to go deeper on anything in the AI/GEO tab.
+
+<Callout icon="pencil">
+  Explain my AI Readiness Score and what I should fix first.
+</Callout>
+
+<Callout icon="pencil">
+  Which pages are most likely to get cited by ChatGPT right now?
+</Callout>
+
+<Callout icon="pencil">
+  Walk me through how to add structured data to my homepage.
+</Callout>
+
+<Callout icon="pencil">
+  Write an llms.txt file for my site.
+</Callout>
+
+The CMO has access to your full audit data and will give you specific answers based on what it found on your actual site, not generic advice. For structural fixes like adding Schema.org markup or creating an `llms.txt`, you can ask the Coding Agent to implement them directly.
