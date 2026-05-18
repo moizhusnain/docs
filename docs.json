@@ -1,0 +1,70 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "Guide",
+  "description": "The complete guide to Okara. Learn how to deploy an AI CMO, automate SEO/GEO audits, generate high-intent content, and scale your marketing with specialized AI agents.",
+  "colors": {
+    "primary": "#1a1919",
+    "light": "#f3f0ec",
+    "dark": "#1a1919"
+  },
+  "favicon": "/images/Frame.png",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
+  "navigation": {
+    "directory": "card",
+    "pages": [
+      "index",
+      {
+        "group": "Platform",
+        "icon": "layers",
+        "pages": [
+          "platform/reddit",
+          "platform/geo-agent",
+          "platform/seo-agent",
+          "platform/coding-agent",
+          "platform/x-agent",
+          "platform/writer",
+          "platform/linkedin-agent",
+          "platform/ugc-agent",
+          "platform/chat",
+          "platform/team",
+          "platform/websites"
+        ]
+      },
+      {
+        "group": "Integrations",
+        "pages": [
+          "platform/analytics-integrations"
+        ],
+        "icon": "plug"
+      },
+      "faqs"
+    ]
+  },
+  "logo": {
+    "light": "/images/okara-dark.png",
+    "dark": "/images/okara-white.png"
+  },
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/askOkara",
+      "linkedin": "https://www.linkedin.com/company/askokara"
+    }
+  }
+}
