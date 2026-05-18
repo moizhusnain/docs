@@ -50,8 +50,8 @@
     ]
   },
   "logo": {
-    "light": "/images/okara-dark.png",
-    "dark": "/images/okara-white.png"
+    "light": "/images/logo.svg",
+    "dark": "/images/logo-white.svg"
   },
   "navbar": {
     "links": [],
