@@ -42,6 +42,7 @@
       {
         "group": "Integrations",
         "pages": [
+          "platform/analytics-integrations"
         ],
         "icon": "plug"
       },
